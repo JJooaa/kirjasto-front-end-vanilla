@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<title>kesken</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body { 
+    font-family: monospace; 
+  }
+  #book_box {
+    display: flex;
+    flex-grow: 4; 
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-content: space-evenly;
+    gap: 20px;
+    width: 60%;
+    padding: 20px;
+    border-radius: 25px;
+    background-color: lightgrey;
+  }
+  #book_image {
+    width: 100px;
+    flex-grow: 0;
+  }
+  .flex_item {
+    width: 200px;
+    flex-grow: 0;
+  }
+  .checked {
+    color: orange;
+  }
+</style>
+
+<body>
+  <div id="book_box">
+    <div class="flex_item" id="book_image"><img id="book_image" src="book1.png"></img></div>
+    <div class="flex_item" id="book_title"><h5>How to hack NASA</h5><h6>Step-by-step guide</h6></div>
+    <div class="flex_item" id="book_description"><h5>Description:</h5><p>Liirum laarum loorum leerum</p></div>
+    <div class="flex_item" id="book_rating">
+      <h5>Rating:</h5>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span> 
+    </div>
+  </div>
+</body>
